@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .main {
+    width: 100%;
+    background: linear-gradient(-45deg, #080200, #1b0244, #022b39, #2077e2);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+  
+  .head {
+    padding-top: 1rem;
+    font-size: 2.4rem;
+    font-weight: bolder;
+    background: -webkit-linear-gradient(#319d9d, #56baa9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .calc {
+    background: #1c0202;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgb(126, 223, 243);
+    margin-top:5%;
+  }
+  
+  .calc form input {
+    width: 60px;
+    background: transparent;
+    height: 60px;
+    margin: 10px;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(5px 5px 20px #fff);
+    font-weight: bold;
+  }
+  
+  .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+  }
+  
+  form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    border-radius: 10px;
+    filter: none;
+    box-shadow: 0px 10px 1000px rgb(151, 249, 249);
+  }
+  
+  form .btns .equal-btn {
+    width: 145px;
+  }
+  
+  form input.operators {
+    color: rgb(207, 204, 20);
+    filter: drop-shadow(5px 5px 20px rgb(151, 249, 249));
+  }
+  
+  .footer {
+    background: rgba(0, 0, 0, 0.705);
+    width: 100vw;
+    text-align: center;
+    color: rgb(210, 247, 244);
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
